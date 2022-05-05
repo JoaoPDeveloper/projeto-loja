@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="UTF-8">
+    <title>Desafio Lading-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color:  hsl(154, 59%, 51%);
+            background-color: hsl(0, 100%, 74%);
+        }
+        .cabecalho {
+            background: #333;
+            border-bottom: solid 5px #4faddb;
+            height: 80px;
+            box-sizing: content-box;
+        }
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+        .logo img {
+            height: 100%;
+        }
+        .menu-toggle {
+            float: right;
+            color: #eee;
+            background-color: rgb(73, 53, 184);
+            border: solid 1px rgb(41, 119, 10);
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px 20px;
+            margin: 20px 15px;
+        }
+        .menu {
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+        }
+        .cabecalho a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1.3em;
+        }
+        .menu a {
+            padding: 15px;
+        }
+        .autenticacao {
+            float: right;
+            height: 80px;
+            padding: 25px;
+        }
+        .menu a:hover,
+        .menu a.selected {
+            background-color: #4faddb;
+            color: rgb(20, 37, 187);
+        }
+        .h1{
+            font-family: 'Poppins';
+            color: rgb(255, 255, 255)
+        }
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
+        .destaque {
+            background: #f50a31;
+            color: #fff;
+        }
+        @media(min-width: 679px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+        @media(max-width: 679px) {
+            .menu {
+                display: none;
+            }
+        }
+        @media(max-width: 600px) {
+            .autenticacao {
+                display: none;
+            }
+        }
+        h1,h2,h3{
+            display: grid;
+            place-items: center;
+            font-size: 250%;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="https://logospng.org/wp-content/uploads/estapar.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="mailto:email@empresa.com.br">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="http://127.0.0.1:5500/Login.html">Login</a>
+            <a href="http://127.0.0.1:5500/form.html" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+    <h1> Apenas um texto, desconsidere essa mensagem!</h1>
+    <h2><br>Outro Texto com algumas palavras sem sentido, apenas testando algumas funcionalidades!</h2></br>
+    <h3> <br>Apenas um texto com várias palavras sem sentido, desconsidere isso</h3></br>
+       
+    <script>
+        window.onhashchange = function(e) {
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
+    </script>
+
+</body>
+
+</html>

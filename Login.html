@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<div class="login-box" <h2>Bem Vindo!</h2>
+    <br>
+    <br>
+    <br>
+    <div class="voltar-box" <h2></h2>
+        <form>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">    
+            <div class="user-box">
+                <label>Usuário :</label>
+                <input type="text" name="" required="">
+            </div>
+            <br>
+            <div class="user-box">
+                <label>Senha :</label>
+                <input type="password" name="" required="">
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Entrar
+            </a>
+        <img src="https://c.tenor.com/oQuGC2HLT_IAAAAd/scissor-seven.gif" class="logo"/>
+        <a href="http://127.0.0.1:5500/desafiolandingpage.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Voltar
+        </a>
+        <a href="http://127.0.0.1:5500/form.html"
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Cadastre-se!
+         </a>
+    </form>
+</div>
+</div>
+<Style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Poppins', sans-serif;
+        background: #21033D;
+    }
+    .login-box {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: hsla(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 3px 15px 9px rgba(122, 7, 168, 0.6);
+        border-radius: 10px;
+        color: bisque;
+        border:solid;
+        color: rgba(5, 6, 94, 0.616);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: aliceblue;
+        display: inline-block;
+    }
+
+    .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+    }
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+    .login-box .user-box input {
+        width: 100%;
+        padding: 12px 1px;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+
+    .login-box .user-box label {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        padding: 12px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .1s;
+    }
+
+    .login-box 
+    .user-box input:focus ~ label, 
+    .login-box 
+    .user-box input:valid ~ label {
+        top: -10px;
+        left: 0;
+        color: #fab700;
+        font-size: 12px;
+    }
+
+    .login-box form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(2, 228, 115);
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
+
+    .login-box a:hover {
+        background: #fffb01;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        box-shadow: 0 0 5px #fffb01,
+                    0 0 25px #fffb01,
+                    0 0 50px #fffb01,
+                    0 0 100px #fffb01;
+    }
+
+    .login-box a span {
+        position: absolute;
+        display: block;
+    }
+
+    .login-box a span :nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparente, #ff0043);
+        animation: btn-anim1 1s linear infinite;
+    }
+
+    @keyframes btn-anim1 { 
+        0% {
+            left: 100%;
+        }
+        50%,100% {
+            left: -100%;
+        }
+    }
+
+    .voltar-box a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(250deg, transparent, #fffb01);
+        animation: btn-anim2 3s linear infinite;
+        animation-delay: .0s;
+    }
+
+    @keyframes btn-anim2 {
+        0% {
+            top: 100%;
+        }
+        50%,100% {
+            top: -100%;
+        }
+    }
+
+    .login-box a span :nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-Gradient(270deg, transparent, #ff0043);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s
+    }
+    /* @keyframes btn-anim3{
+        0% {
+            bottom: -100%;
+        }
+        50%,100%{
+            right: 100%;
+        }
+    } */
+    .login-box a span :nth-child(4){
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent,#ff0043);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: .75s;
+    }
+    /* @keyframes btn-anim4{
+        0%{
+            bottom: -100%;
+        }
+        50%,100%{
+            bottom: 100%;
+        }
+    } */
+
+    .logo{
+        position: absolute;
+        top: -48%;
+        left: 13%;
+        width: 300px;
+        height: 220px;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        }
+</Style>
+
+

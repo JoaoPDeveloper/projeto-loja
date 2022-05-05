@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <style>
+        html{
+            width: 100vw;
+            height: 100vh;
+            background-color:  hsl(233, 87%, 12%);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            text-overflow: ellipsis;
+        }
+        
+        .Produto {
+            /* float: left; */
+            display: inline-block;
+            vertical-align: top;
+            border: solid 2px rgb(255, 255, 255);
+            filter: drop-shadow(5 5 5 50px rgb(255, 255, 255));
+            border-color: #fff;
+            height: 450px;
+            width: 450px;
+            margin: 7px 22px;
+            padding: 15px;
+        }
+        
+        h2{
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        
+        .Produto img {
+            width: 100%;
+            max-height: 50%;
+        }
+        
+        .Produto-info {
+            padding: 10px;
+            height: 90px;
+            overflow: hidden;
+            color: aliceblue;
+        }
+        
+        .Produto-info h4 {
+            font-size: 1.4em;
+            font-weight: 100;
+            margin: 0px;
+        }
+        
+        .Produto-preco {
+            float: center;
+            padding: 16px;
+            display:block;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .preco-de {
+            text-decoration: line-through;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 18px;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+        
+        .preco-por {
+            /* align-items: center; */
+            /* text-align: center; */
+            color: rgb(255, 238, 1);
+            font-weight: bolder;
+            font-size: 1.5em;
+            background-color: black;
+            /* align-items: center; */
+        }       
+        *{
+            font-family: 'Poppins', sans-serif;
+            font-style: initial;
+        }
+        a{
+        position: relative;
+        display: inline-block;
+        padding: 18px 15px;
+        color: #ffffff;
+        font-size: 19px;
+        text-decoration: none;
+        text-transform:uppercase;
+        overflow: hidden;
+        transition: .8s;
+        margin-top: 1px;
+        letter-spacing: 1px;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+    a:hover {
+        background: #ff0043;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #774291,
+        0 0 25px #774291 ,
+        0 0 50px #774291,
+        0 0 100px #774291;
+    }
+    
+    .Comprar1, 
+    .Comprar2{
+        position: relative;
+        display: inline-block;
+        padding: 10px 10px;
+        padding-bottom: 5px;
+        color: #472757;
+        background-color: #E6BBCC;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: initial;
+        overflow: hidden;
+        transition: .9s;
+        margin-top: 15px;
+        letter-spacing: 2px;
+        font-family: 'Poppins', sans-serif;
+        /* justify-items: center; */
+        }
+
+        .Comprar1:hover{
+            background:aliceblue;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            box-shadow: 0 0 5px #0077ffad,
+                    0 0 25px #0077ffad,
+                    0 0 50px #0077ffad,
+                    0 0 100px #0077ffad;
+                    
+        }
+        .Comprar2:hover{
+            background:aliceblue;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            box-shadow: 0 0 5px #0077ffad,
+                    0 0 25px #0077ffad,
+                    0 0 50px #0077ffad,
+                    0 0 100px #0077ffad;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Produtos</h2>
+    <div>
+
+        <div class="Produto">
+            <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
+            <div class="Produto-info">
+                <h4>Produto 2 Com Melhorias e Adcionais </h4>
+                <p>Aproveite o Desconto de 50%</p>
+            </div>
+            
+            <div>
+            <div class="Produto-preco">
+                <span class="preco-por">R$50,00</span>
+                <span class="preco-de">R$100,00</span>
+                <br>
+                <a href="" class="Comprar1">Comprar</a>
+            </div>
+            </div>
+            </div>
+        <div class="Produto">
+            <img src="http://files.cod3r.com.br/curso-web/curso2.jpg" />
+            <div class="Produto-info">
+                <h4>Produto 2 Com Ajustes e Modelos </h4>
+                <p>Aproveite o Desconto de 37%</p>
+            </div>
+           <div> 
+            <div class="Produto-preco">
+                <span class="preco-por">R$50,00</span>
+                <span class="preco-de">R$80,00</span>
+                <br>
+                <a href="" class="Comprar2">Comprar</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+<a href="http://127.0.0.1:5500/desafiolandingpage.html" class="inicio">Inicio</a>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+</html>

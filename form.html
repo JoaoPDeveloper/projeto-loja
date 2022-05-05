@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<h1>Se Registre Gratuitamente!</h1>
+
+<form method="POST">
+    <div>
+        <label for="nome">Primeiro Nome: </label>
+        <input type="nome" id="txtNome" placeholder="Digite seu Nome" required="required"/><span class="required"></span>
+    </div>
+    <div>
+        <label for="nome">Segundo nome: </label>
+        <input type="Nome" id="txtNome" placeholder="Digite seu Nome" required="required"/><span class="required"></span>
+    </div>
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" id="txtNome" placeholder="Digite seu E-mail" required="required"/><span class="required"></span>
+    </div>
+
+    <div>
+        <label for="Senha">Senha: </label>
+        <input type="password" id="pass" name="password"minlength="8" required="required"/><span class="required"></span>
+    </div>
+    <div>
+        <label for="Senha">Senha Novamente: </label>
+        <input type="password" id="pass" name="password"minlength="8" required="required"/><span class="required"></span>
+    </div>
+    <div>  
+        <p> Selecione o Seu Plano :</p>
+        <input type="radio" name="tipo" value="Basico">Basico
+        <input type="radio" name="tipo" value="Plus">Plus
+        <input type="radio" name="tipo" value="Premium"> Premium
+    </div>
+
+    <select name="pagamento">
+        <option value="">Formas de Pagamento</option>
+        <option value="de">Débito</option>
+        <option value="cre">Crédito</option>
+        <option value="bo">Boleto</option>
+    </select>
+
+    <p>Escolha o Seu Produto Abaixo:</p>
+    <div class="#produto">
+        <div class="form-group">
+            <label for="ProdutoPreferido"></label>
+            <select id="ProdutoPreferido" class="form-control">
+                <option value="#Produto 1">Produto 1</option>
+                <option value="Produto 2">Produto 2</option>
+                <option value="Produto 3">Produto 3</option>
+                <option value="Produto 4">Produto 4</option>
+                <option value="Produto 5">Produto 5</option>
+                <option value="Produto 6">Produto 6</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="enviar">
+        <span>Enviar</span>
+    </button>
+    <button class="cancelar" type="reset">Cancelar</button>
+    <span>
+        <a href="http://127.0.0.1:5500/desafiolandingpage.html" class="inicio">Inicio</a>
+    </span>
+    </form>
+    <p></p>
+    <p></p>
+    </div>
+    <p>
+        <p></p>
+    </p>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+</form>
+
+<style>
+    html{
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        width: 500px;
+        padding: 50px;
+        transform: translate(-50%, -50%);
+        box-shadow: 10px 3px 12px 4px #b80e02d8;
+        box-sizing:border-box;
+        border:solid .1rem;
+        border-radius: 25px;
+        display:contents;
+        box-sizing: 10px;
+        color: rgb(255, 247, 14);
+        font-family: 'Poppins', sans-serif;
+        border-color: #ff2600;
+        text-align: center;
+        align-items: center;
+        background-color: #21033D;
+    }  
+    h1{
+        display: inline-flex;
+    }
+    *{  
+        font-family: 'Poppins', sans-serif;
+    }
+    input,
+    textarea,
+    select,div {
+        /* display: inline-block; */
+        margin-bottom: 16px;
+        border-radius: 5%;
+        border-color: rgb(39, 0, 131);
+        text-align: center;
+        font-size: 16px;
+        align-items: right;
+        }
+        
+        .label{
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-left: 100%;
+        }
+        input[type=radio],
+        input[type=checkbox] {
+            display: inline-block;
+            font-size: 16px;
+            color: black;
+        }
+
+        .enviar{
+        position: relative;
+        display: inline-block;
+        padding: 22px 16px;
+        color: #000000;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform:uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 2px;
+        letter-spacing: 2px;
+        }
+
+        .enviar:hover{
+        background: #faf606;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ff2600,
+                    0 0 10px #ff2600,
+                    0 0 10px #ff2600,
+                    0 0 10px #ff2600;
+    }
+
+        .cancelar{
+        position: relative;
+        display: inline-block;
+        padding: 22px 16px;
+        color: #000000;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform:uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 2px;
+        letter-spacing: 2px;
+        }
+
+        .cancelar:hover {
+        background: #faf606;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ff2600,
+                    0 0 10px #ff2600,
+                    0 0 10px #ff2600,
+                    0 0 10px #ff2600;
+        }
+
+        .inicio{
+        position: relative;
+        display: inline-flex;
+        padding: 23px 17px;
+        color: #000000;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform:uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 2px;
+        letter-spacing: 2px;
+        background-color: aliceblue;
+    }
+        .inicio:hover {
+        background: #faf606;
+        color: rgb(0, 0, 0);
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ff2600,
+                    0 0 10px #ff2600,
+                    0 0 10px #ff2600,
+                    0 0 10px #ff2600;
+        }
+
+
+</style>
+
+<script>
+    $(document).ready(function(){
+        $(".form").submit(function(e) {
+           e.preventDefault();//evita o envio do registro 
+        });
+   });
+</script>
